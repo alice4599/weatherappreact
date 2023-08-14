@@ -1,6 +1,5 @@
 import React from "react";
 import Date from "./Date";
-import Forecast from "./Forecast";
 
 export default function Info(props) {
   return (
@@ -38,7 +37,6 @@ export default function Info(props) {
           km/h
         </ul>
       </div>
-      <Forecast />
     </div>
   );
 }

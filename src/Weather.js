@@ -4,7 +4,6 @@ import Info from "./Info";
 import axios from "axios";
 
 import "./Style.css";
-import Forecast from "./Forecast";
 
 export default function Weather(props) {
   let [weather, setWeather] = useState({ ready: false });
@@ -57,7 +56,6 @@ export default function Weather(props) {
             </Button>
           </form>
           <Info data={weather} />
-          <Forecast coordinates={weather.coordinates} city={weather.city} />
         </div>
       </div>
     );
