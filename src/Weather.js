@@ -56,6 +56,17 @@ export default function Weather(props) {
             </Button>
           </form>
           <Info data={weather} />
+          <small>
+            <a
+              class="source"
+              href="https://github.com/alice4599/weatherappreact.git"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open-source code
+            </a>
+            by Neli
+          </small>
         </div>
       </div>
     );
