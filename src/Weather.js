@@ -59,7 +59,7 @@ export default function Weather(props) {
           <Info data={weather} />
           <small>
             <a
-              class="source"
+              className="source"
               href="https://github.com/alice4599/weatherappreact.git"
               target="_blank"
               rel="noreferrer"
