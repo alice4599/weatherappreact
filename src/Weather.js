@@ -47,6 +47,7 @@ export default function Weather(props) {
               id="enter-city"
               className="enterCity"
               onChange={cityInput}
+              autoFocus="on"
             />
             <Button variant="outline-dark" type="submit" id="searchCity">
               search
