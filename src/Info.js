@@ -10,8 +10,8 @@ export default function Info(props) {
         {props.data.city}
       </h1>
       <Date date={props.data.date} />
+      <Icon data={props.data.icon} />
       <div className="tempUnit">
-        <Icon data={props.data.icon} />
         <p className="weatherDescription" id="description">
           {props.data.description}
         </p>

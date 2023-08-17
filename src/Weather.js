@@ -45,7 +45,7 @@ export default function Weather(props) {
               type="search"
               placeholder="enter city"
               id="enter-city"
-              className="enterCity"
+              className="enterCity focus:outline-none capitalize"
               onChange={cityInput}
               autoFocus="on"
             />

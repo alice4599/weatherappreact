@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .card {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/077/583/original/background.jpg?1681743283");
   background-size: cover;
@@ -64,12 +68,6 @@ h1 {
   text-shadow: 1px 1px 2px black;
 }
 
-.mainIcon {
-  position: relative;
-  top: -20px;
-  left: -5px;
-}
-
 .infoHumidity {
   display: inline;
 }
@@ -77,7 +75,10 @@ h1 {
 .infoSpeed {
   display: inline;
 }
-
+.mainIcon {
+  display: flex;
+  justify-content: center;
+}
 .source {
   color: white;
   text-shadow: 1px 1px 2px black;
