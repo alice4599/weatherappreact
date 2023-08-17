@@ -1,6 +1,7 @@
 import React from "react";
 import Date from "./Date";
 import Icon from "./Icon";
+import TemperatureUnit from "./TemperatureUnit";
 
 export default function Info(props) {
   return (
@@ -14,14 +15,7 @@ export default function Info(props) {
         <p className="weatherDescription" id="description">
           {props.data.description}
         </p>
-        <span className="temperature" id="temperature">
-          {Math.round(props.data.temperature)}
-        </span>
-        <span className="unit" id="celsius">
-          °C
-        </span>
-
-        <br />
+        <TemperatureUnit celsius={props.data.temperature} />
         <ul className="weatherInfo">
           <span> Humidity💦: </span>
           <li className="infoHumidity" id="humidity">
