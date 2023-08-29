@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Info from "./Info";
 import axios from "axios";
+import Forecast from "./Forecast";
 
 import "./Style.css";
 
@@ -57,6 +58,7 @@ export default function Weather(props) {
             </Button>
           </form>
           <Info data={weather} />
+          <Forecast />
           <footer>
             <small>
               <a

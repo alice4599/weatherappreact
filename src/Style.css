@@ -128,3 +128,6 @@ h1 {
   color: white;
   text-shadow: 1px 1px 2px black;
 }
+.forecastMin {
+  margin-left: 5px;
+}
