@@ -29,29 +29,36 @@
   order: 5;
   justify-content: space-evenly;
   align-items: center;
+  margin: 30px auto;
 }
+
 .celsius {
   color: black;
   text-shadow: 1px 1px 2px white;
   cursor: default;
   text-decoration: none;
 }
+
 .enter-city {
   height: 45px;
 }
-.fahrenheit {
-  color: black;
-  text-shadow: 1px 1px 2px white;
-  cursor: default;
-  text-decoration: none;
-}
+
 .forecast-row {
   text-align: center;
   margin-bottom: 18px;
   color: white;
   text-shadow: 1px 1px 2px black;
 }
-
+.forecastDay {
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 2px white;
+}
+.forecastTemp {
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 2px white;
+}
 .forecastMondayMax {
   font-size: 15px;
 }

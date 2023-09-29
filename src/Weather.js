@@ -11,6 +11,7 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function weatherResponse(response) {
+    console.log(response.data);
     setWeather({
       ready: true,
       coordinates: response.data.coordinates,
@@ -42,25 +43,33 @@ export default function Weather(props) {
       <div className="container">
         <div className="card">
           <form onSubmit={submit} className="showCity" id="show-city">
-            <input
-              type="search"
-              placeholder="enter city"
-              id="enter-city"
-              className="enterCity focus:outline-none capitalize"
-              onChange={cityInput}
-              autoFocus="on"
-            />
-            <Button variant="outline-dark" type="submit" id="searchCity">
-              search
-            </Button>
-            <Button variant="outline-dark" id="currentLocation">
-              current
-            </Button>
+            <div className="row m-0 p-8 justify-center">
+              <div className="col-5">
+                <input
+                  type="search"
+                  placeholder="enter city"
+                  id="enter-city"
+                  className="enterCity focus:outline-none capitalize rounded-md"
+                  onChange={cityInput}
+                  autoFocus="on"
+                />
+              </div>
+              <div className="col-3">
+                <Button
+                  className="searchButton ml-5"
+                  variant="outline-dark"
+                  type="submit"
+                  id="searchCity"
+                >
+                  search
+                </Button>
+              </div>
+            </div>
           </form>
           <Info data={weather} />
-          <Forecast />
+          <Forecast city={weather.city} />
           <footer>
-            <small>
+            <small className="m-3">
               <a
                 className="source"
                 href="https://github.com/alice4599/weatherappreact.git"
